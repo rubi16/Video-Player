@@ -37,8 +37,8 @@ public class Recycler_Adapter extends RecyclerView.Adapter<VideoHolder> {
     public void onBindViewHolder(@NonNull VideoHolder videoholder, int i) {
 
         videoholder.txtfilename.setText(MainActivity.fileArrayList.get(i).getName());
-        Bitmap bitmapthumnail = ThumbnailUtils.createVideoThumbnail(videoArraylist.get(i).getPath(), MediaStore.Images.Thumbnails.MINI_KIND);
-        videoholder.imagethumnail.setImageBitmap(bitmapthumnail);
+        Bitmap bitmap=ThumbnailUtils.createVideoThumbnail(videoArraylist.get(i).getPath(),MediaStore.Images.Thumbnails.MINI_KIND);
+        videoholder.imagethumnail.setImageBitmap(bitmap);
 
     }
 
